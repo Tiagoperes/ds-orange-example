@@ -1,0 +1,16 @@
+{
+    "name": "Text",
+    "properties": [
+        {
+            "name": "text",
+            "type": "String",
+            "required": true,
+            "description": "The label of the button"
+        },
+        {
+            "name": "color",
+            "type": "String",
+            "defaultValue": "'#000'"
+        }
+    ]
+}

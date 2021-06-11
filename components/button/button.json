@@ -27,16 +27,10 @@
     ],
     "properties": [
         {
-            "name": "label",
+            "name": "text",
             "type": "String",
             "required": true,
             "description": "The label of the button"
-        },
-        {
-            "name": "type",
-            "type": "ButtonType",
-            "description": "Uses pre-defined styles according to the intent of the button. Examples: primary, danger, text.",
-            "defaultValue": "ButtonType.secondary"
         },
         {
             "name": "enabled",
