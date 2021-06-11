@@ -1,0 +1,12 @@
+[
+    {
+        "name": "ButtonType",
+        "description": "The style of the button to render",
+        "values": ["primary", "secondary", "text", "danger"]
+    },
+    {
+        "name": "TextInputType",
+        "description": "The type of keyboard to show when the user focuses the text field",
+        "values": ["text", "number", "email"]
+    }
+]

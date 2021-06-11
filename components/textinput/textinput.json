@@ -1,0 +1,46 @@
+{
+    "name": "TextInput",
+    "descriptionUrl": "/textinput.md",
+    "is": ["StyledComponent", "AccessibleComponent"],
+    "properties": [
+        {
+            "name": "label",
+            "type": "String",
+            "description": "The label of the input"
+        },
+        {
+            "name": "placeholder",
+            "type": "String",
+            "description": "The content to show as a hint, before anything is typed."
+        },
+        {
+            "name": "enabled",
+            "type": "Boolean",
+            "description": "When enabled is false, the input's content can't be changed",
+            "defaultValue": "true"
+        },
+        {
+            "name": "type",
+            "type": "TextInputType",
+            "description": "The type of the input to be typed. Examples: text, number, email. On mobile platforms will change the layout of the keyboard.",
+            "defaultValue": "TextInputType.text"
+        }
+    ],
+    "events": [
+        {
+            "name": "onChange",
+            "type": "(event: ValueEvent) => Void",
+            "description": "Function to be called when the value of the field changes. The function is called with the current value of the field."
+        },
+        {
+            "name": "onBlur",
+            "type": "(event: ValueEvent) => Void",
+            "description": "Function to be called when the field loses focus. The function is called with the current value of the field."
+        },
+        {
+            "name": "onFocus",
+            "type": "(event: ValueEvent) => Void",
+            "description": "Function to be called when the field gains focus. The function is called with the current value of the field."
+        }
+    ]
+}

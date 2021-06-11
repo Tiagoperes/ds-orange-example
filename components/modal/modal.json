@@ -1,0 +1,35 @@
+{
+    "name": "Modal",
+    "description": "A modal with title and content",
+    "is": ["StyledComponent"],
+    "platforms": ["angular", "react"],
+    "acceptsChildren": true,
+    "examples": [
+        {
+            "path": {
+                "angular": ["/examples/modal.template.html", "/examples/modal.controller.ts"],
+                "react": "/examples/modal.tsx"
+            }
+        }
+    ],
+    "properties": [
+        {
+            "name": "title",
+            "type": "String",
+            "required": true,
+            "description": "The title of the modal"
+        },
+        {
+            "name": "isOpen",
+            "type": "Boolean",
+            "description": "Control if the modal is opened or closed"
+        }
+    ],
+    "events": [
+        {
+            "name": "onClose",
+            "type": "() => Void",
+            "description": "Function called when esc is pressed, the user clicks outside the modal or the user clicks the \"x\" button."
+        }
+    ]
+}

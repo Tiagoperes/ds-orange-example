@@ -1,0 +1,92 @@
+[
+    {
+        "name": "Shadow",
+        "description": "The shadow of an element",
+        "properties": [
+            {
+                "name": "size",
+                "type": "Double",
+                "description": "The size of the shadow in pixels",
+                "defaultValue": "3"
+            },
+            {
+                "name": "direction",
+                "type": "Double",
+                "description": "The direction of the shadow defined by the angle it creates. Must be specified in degrees, in the interval [0-360[",
+                "defaultValue": "315"
+            },
+            {
+                "name": "blur",
+                "type": "Double",
+                "description": "How much the shadow should be blurred expressed in pixels",
+                "defaultValue": "5"
+            },
+            {
+                "name": "color",
+                "type": "String",
+                "description": "The color of the shadow expressed in hex",
+                "defaultValue": "#000"
+            },
+            {
+                "name": "opacity",
+                "type": "Double",
+                "description": "Opacity of the shadow. 0 is transparent and 1 is opaque.",
+                "defaultValue": "0.6"
+            }
+        ]
+    },
+    {
+        "name": "ValueEvent",
+        "properties": [
+            {
+                "name": "value",
+                "type": "Any",
+                "description": "The value that should be propagated by the event"
+            }
+        ]
+    },
+    {
+        "name": "StyledComponent",
+        "properties": [
+            {
+                "name": "style",
+                "type": "Map<String, String>",
+                "platforms": ["angular", "react"]
+            },
+            {
+                "name": "className",
+                "type": "String"
+            }
+        ]
+    },
+    {
+        "name": "User",
+        "properties": [
+            {
+                "name": "name",
+                "type": "String"
+            }
+        ]
+    },
+    {
+        "name": "AccessibleComponent",
+        "properties": [
+            {
+                "name": "accessibleLabel",
+                "type": "String",
+                "description": "Text to read for screen readers"
+            },
+            {
+                "name": "isHeader",
+                "type": "Boolean",
+                "description": "Tells the screen reader that this is a title"
+            },
+            {
+                "name": "role",
+                "type": "String",
+                "platforms": ["angular", "react"],
+                "description": "Tells the screen reader the role of this component. Please look for aria-role in W3C for more details."
+            }
+        ]
+    }
+]

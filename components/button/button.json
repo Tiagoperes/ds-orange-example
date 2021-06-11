@@ -1,0 +1,73 @@
+{
+    "name": "Button",
+    "description": "A clickable button...\nnew line",
+    "is": ["StyledComponent"],
+    "deprecated": "since 1.5. We don't support rounded corners anymore.",
+    "examples": [
+        {
+            "name": "Simple button",
+            "description": "An example of a simple button",
+            "path": {
+                "angular": ["/examples/simple/simple-button.template.html", "/examples/simple/simple-button.controller.ts"],
+                "react": "/examples/simple/simple-button.tsx",
+                "android": "/examples/simple/button/simple-button.kt",
+                "ios": "/examples/simple/button/simple-button.swift"
+            }
+        },
+        {
+            "name": "Primary disabled button",
+            "description": "An example with a primary button that is disabled",
+            "path": {
+                "angular": ["/examples/primary/primary-button.template.html", "/examples/primary/primary-button.controller.ts"],
+                "react": "/examples/primary/primary-button.tsx",
+                "android": "/examples/primary/button/primary-button.kt",
+                "ios": "/examples/primary/button/primary-button.swift"
+            }
+        }
+    ],
+    "properties": [
+        {
+            "name": "label",
+            "type": "String",
+            "required": true,
+            "description": "The label of the button"
+        },
+        {
+            "name": "type",
+            "type": "ButtonType",
+            "description": "Uses pre-defined styles according to the intent of the button. Examples: primary, danger, text.",
+            "defaultValue": "ButtonType.secondary"
+        },
+        {
+            "name": "enabled",
+            "type": "Boolean",
+            "description": "When enabled is false, the button can not be clicked",
+            "defaultValue": "true"
+        },
+        {
+            "name": "elevation",
+            "type": "Int",
+            "platforms": ["android"],
+            "description": "Defines both the shadow and how up in the view structure it appears. The higher the elevation the stronger the shadow."
+        },
+        {
+            "name": "shadow",
+            "type": "Shadow",
+            "platforms": ["ios", "angular", "react"],
+            "description": "Defines how the shadow of the button should be rendered"
+        },
+        {
+            "name": "cornerRadius",
+            "type": "List<Double>",
+            "deprecated": "since 1.5. We don't support rounded corners anymore.",
+            "description": "This array of doubles defines how round each of the four corners of the button is"
+        }
+    ],
+    "events": [
+        {
+            "name": "onPress",
+            "type": "() => Void",
+            "description": "Function to be called when the button is pressed"
+        }
+    ]
+}
